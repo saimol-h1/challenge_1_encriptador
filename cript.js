@@ -9,10 +9,7 @@ for (let x = 0; x < palabracrip.length; x++) {
 } */
 /* console.log(palabracrip); */
 
-function crip(grase) {
-  let palabracrip1 = grase;
+function crip() {
+  let palabracrip1 = document.getElementById("input_text");
   let crip = palabracrip1.replace(/e/gm, "enter");
-  console.log(crip);
 }
-
-crip("hole");

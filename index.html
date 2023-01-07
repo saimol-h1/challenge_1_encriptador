@@ -8,25 +8,29 @@
     <title>Encrip</title>
   </head>
   <body>
-    <label for="">
-      <div>
-        <main>
-          <div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <div>
-              <button></button>
-              <button></button>
-              <button></button>
-            </div>
+    <div class="contenedor_izq">
+      <main class="contenedor">
+        <div class="contenedor_input">
+          <textarea
+            name=""
+            id="texto_input"
+            class="input_text"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="button_prin">
+            <button class="button_1" onclick="crip();">Encriptar</button>
+            <button class="button_1" onclick="descrip();">Desencriptar</button>
+            <button class="button_1" onclick="copiar();">Copiar</button>
           </div>
-          <div>
-            <div>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-              
-            </div>
+        </div>
+        <div class="contenerdor_de">
+          <div class="contenedor_ouput">
+            <textarea name="" id="text_salidas" cols="30" rows="10"></textarea>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
+    </div>
   </body>
   <script src="cript.js"></script>
 </html>

@@ -4,39 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/style.css" />
     <title>Encrip</title>
   </head>
   <body>
-    <div class="contenedor_izq">
-      <main class="contenedor">
+    <main class="contenedor">
+      <div class="contenedor_1">
+        <img class="logo" src="/logo.png" alt="" />
         <div class="contenedor_input">
           <textarea
             name=""
             id="texto_input"
             class="input_text"
-            cols="30"
-            rows="10"
+            placeholder="Ingresar texto aqui"
           ></textarea>
-          <div class="button_prin">
-            <button class="button_1" onclick="crip();">Encriptar</button>
-            <button class="button_1" onclick="descrip();">Desencriptar</button>
-            <button class="button_1" onclick="copiar(Text);">Copiar</button>
+        </div>
+        <div class="button_prin">
+          <button class="button_1" onclick="crip();">Encriptar</button>
+          <button class="button_1" onclick="descrip();">Desencriptar</button>
+          <button class="button_1" onclick="copiar(Text);">Copiar</button>
+        </div>
+      </div>
+      <div class="contenerdor_de">
+        <div class="contenedor_ouput">
+          <textarea name="" id="text_salidas" class="salida"></textarea>
+          <div class="img">
+            <img src="/search.png" alt="" />
+          </div>
+          <div class="copi">
+            <button class="copy">Copy</button>
           </div>
         </div>
-        <div class="contenerdor_de">
-          <div class="contenedor_ouput">
-            <textarea
-              name=""
-              id="text_salidas"
-              cols="30"
-              rows="10"
-              class="salida"
-            ></textarea>
-          </div>
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
   </body>
   <script src="cript.js"></script>
 </html>

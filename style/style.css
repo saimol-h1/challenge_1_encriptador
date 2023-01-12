@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor {
+  display: flex;
+  height: 100vh;
+  background-color: #e5e5e5;
+  padding: 40px 50px;
+}
+
+.contenedor_1 {
+  width: 70%;
+  height: 100%;
+  position: relative;
+}
+.contenedor .contenedor_1 .contenedor_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+.contenedor .contenedor_1 .contenedor_input textarea {
+  width: 50%;
+  resize: none;
+  border: none;
+  color: #0a3871;
+  font-size: 20px;
+  background-color: #e5e5e5;
+  height: 200px;
+}
+.contenedor .contenedor_1 .contenedor_input textarea::placeholder {
+  color: #0a3871;
+}
+.contenedor .contenedor_1 .contenedor_input textarea:focus {
+  outline: none;
+  color: #0a3871;
+}
+
+.contenedor .contenedor_1 .button_prin {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+}
+.contenedor .contenedor_1 .button_prin .alert {
+  display: flex;
+  gap: 5px;
+  color: #0a3871;
+}
+.contenedor .contenedor_1 .button_prin .button_1 {
+  display: flex;
+  gap: 5px;
+  color: #0a3871;
+  width: 100%;
+}
+.contenedor .contenedor_1 .button_prin button {
+  padding: 24px;
+  width: 50%;
+  height: 67px;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contenedor .contenedor_1 .button_prin .button_1 {
+  background-color: #0a3871;
+  color: #d8dfe8;
+}
+.encrypter .encrypter-get .encrypter-get__buttons .button2 {
+  background-color: #d8dfe8;
+  color: #0a3871;
+}
+.contenedor_ouput {
+  width: 30%;
+  height: 100%;
+  padding: 30px;
+  position: relative;
+  border-radius: 32px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.contenedor .contenedor_ouput .salida {
+  font-size: 20px;
+  display: none;
+  width: 100%;
+  height: 90%;
+  border: none;
+}
+.contenedor .contenedor_ouput .copi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+.contenedor .contenedor_ouput .copi button {
+  width: 80%;
+  border: 1px solid #0a3871;
+  font-size: 16px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: #fff;
+  color: #0a3871;
+  cursor: pointer;
+  display: none;
+}
+
+.contenedor .contenedor_ouput .img {
+  width: 100%;
+  height: 100%;
+}
+.contenedor .contenedor_ouput .img img {
+  width: 100%;
+  height: 100%;
+}
+.contenedor .contenedor_ouput textarea:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    display: flex;
+    height: 100vh;
+    background-color: #e5e5e5;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .contenedor_1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .contenedor .contenedor_1 .contenedor_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .contenedor .contenedor_1 .contenedor_input textarea {
+    width: 70%;
+    resize: none;
+    border: none;
+    color: #0a3871;
+    font-size: 16px;
+    background-color: #e5e5e5;
+    /* border: none; */
+  }
+  .contenedor .contenedor_1 .button_prin {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+  }
+  .contenedor .contenedor_1 .button_prin button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 24px;
+    border: 1px solid #0a3871;
+    font-size: 16px;
+  }
+  .contenedor_ouput {
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    border-radius: 32px;
+    background-color: #fff;
+    margin: 10px auto;
+  }
+  .contenedor .contenedor_ouput .copi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+  }
+  .contenedor .contenedor_ouput .copi button {
+    width: 80%;
+    border: 1px solid #0a3871;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 24px;
+    background-color: #fff;
+    color: #0a3871;
+  }
+  .contenedor .contenedor_ouput .img {
+    padding: 0 25%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .encrypter .encrypter-all .encrypter-all__search {
+    padding: 0 5px;
+  }
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  background: #f3f5fc;
+  width: auto;
+  height: 933px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+.contenedor_input textarea {
+  height: 100px;
+  max-width: 95%;
+  border: none;
+  background-color: #f3f5fc;
+  display: block;
+}
+.contenedor_ouput textarea {
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+.button_1 {
+  background: #0a3871;
+  border-radius: 24px;
+}
+ */
